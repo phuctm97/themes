@@ -69,7 +69,7 @@ export default function Demo() {
                       <Text size="1" weight="bold" color="gray" mb="1">
                         Role
                       </Text>
-                      <SelectRoot defaultValue={user.role} menuVariant="subtle-mono">
+                      <SelectRoot defaultValue={user.role} menuVariant="soft">
                         <SelectItem value="viewer">Viewer</SelectItem>
                         <SelectItem value="maintainer">Maintainer</SelectItem>
                         <SelectItem value="contributor">Contributor</SelectItem>

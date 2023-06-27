@@ -212,7 +212,7 @@ const ControlPanelImpl: React.FC<ControlPanelImplProps> = ({ visible, onVisibleC
           id="accent-scale"
           value={accentScale}
           onValueChange={(value) => setAccentScale(value as ColorScale)}
-          menuVariant="subtle-mono"
+          menuVariant="soft"
           style={{ minWidth: 120 }}
         >
           {groupedColors.map(({ label, values }, index) => (
@@ -256,7 +256,7 @@ const ControlPanelImpl: React.FC<ControlPanelImplProps> = ({ visible, onVisibleC
           id="gray-scale"
           value={grayScale}
           onValueChange={(value) => setGrayScale(value as GrayScaleControl)}
-          menuVariant="subtle-mono"
+          menuVariant="soft"
           style={{ minWidth: 120 }}
         >
           {groupedGrays.map(({ label, values }, index) => (
@@ -455,7 +455,7 @@ const ControlPanelImpl: React.FC<ControlPanelImplProps> = ({ visible, onVisibleC
           id="radius"
           value={radius}
           onValueChange={(value) => setRadius(value as Radius)}
-          menuVariant="subtle-mono"
+          menuVariant="soft"
         >
           {radiusValues.map((value) => (
             <Select.Item key={value} value={value}>
@@ -471,7 +471,7 @@ const ControlPanelImpl: React.FC<ControlPanelImplProps> = ({ visible, onVisibleC
           id="scaling"
           value={scaling}
           onValueChange={(value) => setScaling(value as Scaling)}
-          menuVariant="subtle-mono"
+          menuVariant="soft"
         >
           {scalingValues.map((value) => (
             <Select.Item key={value} value={value}>

@@ -19,6 +19,7 @@ import {
   IconButton,
   Link,
   RadioGroup,
+  selectTriggerVariants,
   selectMenuVariants,
   sliderVariants,
   Switch,
@@ -59,6 +60,7 @@ import type {
   AvatarVariant,
   ButtonVariant,
   CheckboxVariant,
+  DropdownMenuVariant,
   SelectMenuVariant,
   SliderVariant,
   SwitchVariant,
@@ -86,7 +88,7 @@ export default function Showcase() {
   const [likeCount, setLikeCount] = React.useState(17);
   const [likeButtonVariant, setLikeButtonVariant] = React.useState<ButtonVariant>('subtle');
   const [themeSelectTriggerVariant, setThemeSelectTriggerVariant] =
-    React.useState<SelectTriggerVariant>('subtle-mono');
+    React.useState<SelectTriggerVariant>('soft');
   const [themeSelectMenuVariant, setThemeSelectMenuVariant] =
     React.useState<SelectMenuVariant>('solid');
   const [sliderValue, setSliderValue] = React.useState(6);
@@ -97,7 +99,7 @@ export default function Showcase() {
   const [dropdownTriggerVariant, setDropdownTriggerVariant] =
     React.useState<ButtonVariant>('ghost');
   const [dropdownMenuVariant, setDropdownMenuVariant] =
-    React.useState<SelectMenuVariant>('subtle-mono');
+    React.useState<DropdownMenuVariant>('subtle-mono');
 
   React.useEffect(() => {
     const id = setTimeout(() => {
@@ -145,7 +147,7 @@ export default function Showcase() {
       setLikeButtonVariant(randomItemInArray(buttonVariants));
       setLikeCount(Math.floor(Math.random() * 30) + 1);
 
-      setThemeSelectTriggerVariant(randomItemInArray(buttonVariants));
+      setThemeSelectTriggerVariant(randomItemInArray(selectTriggerVariants));
       setThemeSelectMenuVariant(randomItemInArray(selectMenuVariants));
 
       setSliderValue(Math.floor(Math.random() * 5) + 2);

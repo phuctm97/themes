@@ -620,7 +620,7 @@ export default function Sink() {
                                       defaultValue="apple"
                                       size="1"
                                       triggerVariant={variant}
-                                      menuVariant="subtle"
+                                      menuVariant="soft"
                                       color={color}
                                     >
                                       <SelectItemsDemo />
