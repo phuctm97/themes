@@ -109,6 +109,9 @@
     &[data-state='closed'] {
       animation-duration: 150ms;
 
+      /* Prevent reopening while animating out, as content is still mounted while the animation is running */
+      pointer-events: none;
+
       &[data-side='top'] {
         animation-name: slideDownAndFadeOut;
       }
