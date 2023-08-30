@@ -1,5 +1,12 @@
 # Changelog
 
+## Up next
+
+- `TextField`
+  - Refine `size="1"` padding
+- `TextArea`
+  - Refine `size="1"` and `size="2"` padding
+
 ## 1.1.2
 
 - General
