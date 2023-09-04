@@ -86,10 +86,12 @@
 .rt-CheckboxButton.rt-variant-classic {
   &:where([data-state='unchecked']) {
     background-color: var(--color-surface);
-    box-shadow: inset 0 0 0 1px var(--gray-a3), var(--shadow-1);
+    box-shadow: inset 0 0 0 1px var(--gray-7), var(--shadow-1);
   }
   &:where([data-state='checked']) {
     background-color: var(--accent-9);
+    background-image: linear-gradient(to bottom, var(--white-a4), transparent, var(--black-a4));
+    box-shadow: inset 0 1px 0.5px var(--white-a8), inset 0 -1px 0.5px var(--black-a4);
     color: var(--accent-9-contrast);
 
     &:where(.rt-high-contrast) {
@@ -104,10 +106,11 @@
 .rt-CheckboxButton.rt-variant-soft {
   background-color: var(--accent-a5);
   &:where([data-state='checked']) {
-    color: var(--accent-11);
+    color: var(--accent-12);
 
     &:where(.rt-high-contrast) {
-      color: var(--accent-12);
+      color: var(--accent-2);
+      background-color: var(--accent-11);
     }
   }
 }
@@ -117,6 +120,8 @@
 .rt-CheckboxButton[data-disabled] {
   box-shadow: inset 0 0 0 1px var(--gray-a6);
   background-color: var(--gray-a3);
+  background-image: none;
+  filter: none;
   cursor: not-allowed;
   color: var(--gray-a8);
 }
