@@ -19,6 +19,8 @@
     - Fix a Safari bug when the text value would appear tinted in the disabled input.
   - Remove ellipsis truncation, as this prevented long values from being shown when scrolling on the input horizontally in Chrome.
   - Improve autofill styles.
+- `Link`
+  - Use a stronger color for the underlines
 
 ## 1.1.2
 
